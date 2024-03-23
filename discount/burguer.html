@@ -7,15 +7,120 @@
     <link rel="stylesheet" href="./assets/css/styleBurger.css">
     <title>Burguer</title>
 
+    <style>
+        body {
+            background-image: url('./assets/img/banner_1.png'); /* Especifica la ruta de la imagen de fondo */
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+            background-position: center; /* Centra la imagen de fondo dentro del contenedor */
+            background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container{
+            margin: auto;
+        }
+
+        h1,p,a{
+            color: white;
+        }
+
+        h1{
+            font-size: 6rem;
+            margin-bottom: 1rem;
+        }
+
+        a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+        /*header/nav*/
+
+        header{
+            margin-right: 5rem;
+        }
+
+
+        .logo{
+            float: left;
+        }
+
+        ul li{
+            
+            display: inline-block;
+            /*margin-left: .2rem;*/
+        }
+        ul{
+            float: right;
+            margin-top: 0;
+        }
+
+        /*hoover*/
+        /* Estilos para el hover coral en los elementos de lista */
+        /*nav ul li:hover {
+            background-color: #F64B3C;
+            width: 100px; /* Define el ancho del enlace cuando se hace hover */
+        /*    height: 50px; /* Define la altura del enlace cuando se hace hover */
+        /*    line-height: 50px; /* Ajusta la altura de la línea del texto verticalmente para centrarlo */
+        /*    text-align: center; /* Centra el texto horizontalmente */
+        /*    display: inline-block; /* Asegura que el enlace ocupe el ancho y el alto definidos */
+        /* }*/
+
+        /* Estilos para los enlaces */
+        nav ul li a {
+            display: inline-block; /* Asegura que el enlace ocupe el ancho y el alto definidos */
+            width: 130px; /* Define el ancho del enlace */
+            height: 60px; /* Define la altura del enlace */
+            line-height: 50px; /* Ajusta la altura de la línea del texto verticalmente para centrarlo */
+            text-align: center; /* Centra el texto horizontalmente */
+            background-color: transparent; /* Color de fondo normal */
+            transition: background-color 0.3s, color 0.3s; /* Transición suave para los cambios de color */
+        }
+
+        /* Estilos para el hover salmon en los enlaces */
+        nav ul li a:hover {
+            background-color: #F64B3C; /* Cambia el color de fondo cuando se hace hover */
+        }
+
+
+
+        /*main/logo*/
+
+        .logo{
+            margin-left: 5rem;
+        }
+
+        main{
+            max-width: 40%;
+            margin-left: 5rem;
+            padding-top: 2rem;
+        }
+
+        .button{
+            max-width: 40%;
+            height: 50px;
+            background-color:#F64B3C;
+            border-radius: 60px;
+            text-align: center;
+            line-height: 50px; /* Ajusta la altura de la línea del texto verticalmente para centrarlo */
+        }
+
+    </style>
+
 </head>
 <body>
     <div class="container">
 
         <header>
-            <div class="logo">
-                <img src="./assets/img/Logo 93x79.png" alt="">
-            </div>
             <nav>
+                <div class="logo">
+                    <img src="./assets/img/Logo 93x79.png" alt="">
+                </div>
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Productos</a></li>
@@ -31,9 +136,16 @@
                 <h1>
                     Obtener descuentos hasta 50%
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vitae magni voluptas commodi quia assumenda debitis repudiandae expedita aperiam. Consequatur officiis fugit ex officia eaque? Sed voluptas error tenetur molestias?
-                Unde quos eveniet, pariatur quasi quo, reiciendis sequi possimus doloremque eum maxime rerum delectus debitis error sed architecto iusto velit! Tempore nisi placeat ducimus quasi, ea nam voluptate odit fugiat.
+
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt vitae magni voluptas commodi quia assumenda debitis repudiandae expedita aperiam. 
+                    Consequatur officiis fugit ex officia eaque? Sed voluptas error tenetur molestias?
                 </p>
+
+                <div class="button">
+                    <a href="#">ORDENE YA!!!</a>
+                </div>
             </div>
         </main>
 
