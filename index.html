@@ -27,7 +27,9 @@
         }
         /* Estilos para los enlaces */
         .project-link {
-            display: block;
+            display: flex; /* Usar flexbox para alinear verticalmente */
+            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centrar horizontalmente */
             text-align: center;
             margin: 20px 0;
             padding: 10px;
@@ -37,6 +39,10 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
+        .project-link img {
+            width: 24px; /* Tamaño fijo para la imagen */
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+        }
         .project-link:hover {
             background-color: #f4a261;
         }
@@ -44,10 +50,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Mis Proyectos de Replicación</h1>
-        <a class="project-link" href="./google1998/google1998.html">Google 1998</a>
+        <h1>Challenges CDC</h1>
+        <div>
+            <a class="project-link" href="./google1998/google1998.html">
+                <img src="https://oldgoogle.neocities.org/favicon.ico" alt="">
+                Google 1998
+            </a>
+        </div>
         <a class="project-link" href="https://tu-proyecto-pagina-comida.com">Página de Comida</a>
         <a class="project-link" href="https://google-actual.com">Google Actual</a>
     </div>
 </body>
 </html>
+
