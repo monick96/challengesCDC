@@ -1,4 +1,4 @@
-# challengesCDC
+# 🤯👇🏽challengesCDC👩🏼‍💻💆🏼‍♀️
 
 Desafios de replicacion de páginas web de Codo a codo.
 
@@ -6,7 +6,7 @@ Desafios de replicacion de páginas web de Codo a codo.
 ![Texto alternativo](https://lh3.googleusercontent.com/ci/AL18g_SuIl2F7CF_eUWMdSNJiBGfjCGm5Our7ttlxXSlNNsdLRgH3uANkrskknK5scq-SXbxHTvW)
 
 ## Flyer descuento Burger
-![Texto alternativo](url_de_la_imagen)
+![burguerFlyer](./burguer/assets/img/burger.png)
 
 ## [Google actual](https://www.google.com/?pccc=1)
 
