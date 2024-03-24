@@ -1,6 +1,8 @@
 # 🤯👇🏽challengesCDC👩🏼‍💻💆🏼‍♀️
 
-Desafios de replicacion de páginas web de Codo a codo.
+Desafios de replicacion de páginas web de Codo a codo solo con css y html.
+
+##### * Los proyectos tienen incorporado el css en el head, excepto el Google actual que está en la crpeta currentGoogle.
 
 ## [Google 1998](https://oldgoogle.neocities.org/1998/)
 ![Texto alternativo](https://lh3.googleusercontent.com/ci/AL18g_SuIl2F7CF_eUWMdSNJiBGfjCGm5Our7ttlxXSlNNsdLRgH3uANkrskknK5scq-SXbxHTvW)
