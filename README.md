@@ -15,3 +15,6 @@ Desafios de replicacion de páginas web de Codo a codo solo con css y html.
 ###### *Sin microfono y sin camara
 
 ![Texto alternativo](./currentGoogle/img/Screenshot_20240324_053332.png)
+
+## Desafio grupal 1
+- duplicar un diseño basico con header y nav sticky al hacer scroll

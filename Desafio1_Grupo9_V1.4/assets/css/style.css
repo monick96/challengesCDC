@@ -54,15 +54,15 @@ nav ul li a:hover{
     background: rgb(255, 231, 252);
 }
 
-
 nav {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
     text-align: center;
     position: sticky;
     top: 0px;
     /* background-color: white; */
     padding: 1rem;
 }
+
 /* fin style header nav*/
 
 /* ----------------------------- MAIN----------------------------- */
@@ -79,8 +79,12 @@ main h2 {
     margin-bottom: 0.85rem;
 }
 
+main ol, main ul{
+    margin-left: 1.5rem;
+}
+
 .ai-help {
-    padding: 50px 0;
+    padding: 20px;
     text-align: left;
 }
 
@@ -102,7 +106,7 @@ main h2 {
 }
 
 .key-features {
-    padding: 50px 0;
+    padding: 20px;
     text-align: left;
 }
 
@@ -114,10 +118,11 @@ main h2 {
 .key-features ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 0;
 }
 
 .key-features li {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     text-align: left;
     color:black;
     font-size: 1.1em;
@@ -125,7 +130,7 @@ main h2 {
 }
 
 .how-to-use {
-    padding: 50px 0 0 0;
+    padding: 20px;
     text-align:left;
 }
 
@@ -165,8 +170,8 @@ main h2 {
     padding: 0 15px;
 }
 
-.how-to-use {
-    margin-bottom: 100px;
+.introduction-sustainability {
+    padding: 20px;
 }
 
 .introduction-sustainability h2 {
@@ -181,14 +186,14 @@ main h2 {
 
 }
 
+.how-it-contributes{
+    padding: 20px;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.introduction-sustainability {
-    margin-bottom: 50px; 
 }
 
 .how-it-contributes h2 {
@@ -251,3 +256,21 @@ footer p{
     margin-bottom: 0;
 }
 /* ----------------------------- FOOTER ----------------------------- */
+
+@media  (max-width: 970px) {
+
+    nav {
+        height: 5.5rem;
+    }
+
+    nav ul li {
+        padding-bottom: 1.5rem;
+    }
+
+    nav ul{
+        height: 4rem;
+        padding-bottom: 0.5rem;
+        
+    }
+    
+}
