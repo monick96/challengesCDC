@@ -18,3 +18,8 @@ Desafios de replicacion de páginas web de Codo a codo solo con css y html.
 
 ## Desafio grupal 1
 - duplicar un diseño basico con header y nav sticky al hacer scroll
+
+## Desafio grupal 2
+- duplicar una pagina de peliculas 
+
+[moviesCAC](https://giselemilagros88.github.io/cac_movies_javaphp/)
