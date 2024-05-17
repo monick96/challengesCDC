@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Solid:wght@100;300;400;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tauri&family=Truculenta:opsz,wght@12..72,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul{
+    padding-left: 0;
+}
+
+/* #region #------------------------------------- HEADER + NAV -------------------------------------# */
+
+header {
+    background-color: #9f3647;
+    /* cambio de 15 a 12vh */
+    min-height: 12vh;
+    top: 0;
+    position: sticky;
+    /* evita superposicion del aos animation*/
+    z-index: 5;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 0 2rem;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a i{
+    font-size: 1.2rem;
+}
+
+.a-icon-header {
+    text-decoration: none;
+    color: white;
+    margin-top: 0.8rem;
+}
+
+nav a:visited {
+    color: white
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+nav li {
+    padding: 0.5rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.a-link-header{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: 650;
+    font-size: 1.2rem;
+    transition: all 300ms ease;
+    
+}
+
+.a-link-header:hover{
+    box-shadow: 0px 0px 5px -1px black;
+}
+
+#iniciar-sesion{
+    padding: 0.5rem;
+    border-radius: 8px ;
+    background-color: black;
+}
+
+#iniciar-sesion:hover{
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 760px) {
+    
+    header{
+        /* max-height: 15vh; */
+        /*Aumento a 20vh*/
+        min-height: 20vh;
+    }
+
+    nav {
+        padding: 0.5rem 0 0.5rem 0 ;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .a-icon-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul{
+        width: 80%;
+        display: inline-flex;
+        justify-content: space-evenly;
+        margin-top: 0.7rem;
+        padding: 0;
+    }
+    
+    nav li {
+        padding: 0.5rem;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .a-link-header{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 460px){
+    nav a i{
+        font-size: 1rem;
+    }
+
+    nav ul{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .a-link-header{
+        font-size: 0.9rem;
+    }
+
+}
+/* #endregion #------------------------------------- HEADER + NAV -------------------------------------# */
+
+/* #------------------------------------- BANNER INFO PELI -------------------------------------# */
+
+.section-infopeli{
+    background: linear-gradient(to right top, #6d6969a7, #6d69695b), url("../images/peliInfo/bannerFondo_mario.jpg"), no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    min-height: 70vh;
+    max-height: 90vh;
+}
+
+.section-infopeli p{
+    font-size: 1.1rem;
+}
+
+.img-peli{
+    position: absolute;
+    border-radius: 15px;
+    margin: 2.5rem 0 0 7rem;
+    z-index: 3;
+}
+
+.div-infopeli{
+    width: 75%;
+    margin-left: 25rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+    padding: 0 4rem 0 3rem;
+}
+
+.div-infopeli h2{
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+.div-infopeli h3{
+    font-weight: 850;
+    margin-top: 1rem;
+    font-size: 1.9rem;
+}
+
+.p-descripcionpeli{
+    width: 80%;
+}
+
+.div-infopeli ul{
+    margin: 1rem 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+}
+
+.ul-li-infopeli-p{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.ul-li-infopeli{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .section-infopeli{
+        max-height: none;
+        flex-direction: column;
+    }
+
+    .section-infopeli p{
+        font-size: 0.9rem;
+    }
+
+    .img-peli{
+        height: 337px;
+        width: 225px;
+        margin: 1rem auto;
+        z-index: auto;
+        position: static;
+    }
+
+    .div-infopeli{
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    .div-infopeli h2{
+        font-size: 2.2rem;
+    }
+
+    .div-infopeli h3{
+        font-size: 1.5rem;
+    }
+
+    .ul-li-infopeli-p{
+        font-size: 1.2rem;
+    }
+    
+    .ul-li-infopeli{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .div-infopeli{
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .div-infopeli ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+/* #------------------------------------- BANNER INFO PELI -------------------------------------# */
+
+/* #------------------------------------- TRAILER -------------------------------------# */
+
+.section-trailer{
+    height: 100vh;
+}
+
+.div-trailer{
+    margin: 4rem 2rem 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-trailer h3{
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.div-trailer iframe{
+    height: 80vh;
+}
+
+/* #------------------------------------- TRAILER -------------------------------------# */
+
+/* #------------------------------------- EXTRA INFORMATION -------------------------------------# */
+
+a {
+    display: flex;
+    text-decoration: none;
+}
+
+.section-infoextra h3{
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.div-infoextra{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-info ul{
+    list-style: none;
+}
+
+.div-info ul li{
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.ul-infotipo{
+    margin-right: 3.5rem;
+    font-weight: 800;
+}
+
+.div-redes{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 4rem 4rem;
+    gap: 2rem;
+}
+
+.div-redes i{
+    font-size: 3.5rem;
+    transition: all ease 0.5s;
+}
+
+/* .fa-solid, .fa-link{
+    display: flex;
+} */
+
+.div-redes i:hover{
+    color: yellow;
+    font-size: 3.9rem;
+    animation: swing;
+    animation-duration: 1s;
+}
+
+@media only screen and (max-width: 700px){
+
+    a {
+        display: flex;
+        text-decoration: none;
+    }
+
+    .div-infoextra{
+        padding: 1rem auto;
+    }
+
+    .ul-infotipo{
+        margin-right: 1rem;
+    }
+
+    .div-info ul li{
+        margin-bottom: 1.2rem;
+    }
+
+    .div-redes{
+        grid-template-columns: 3rem 3rem;
+        gap: 1rem;
+    }
+
+    .div-redes i{
+        font-size: 2.5rem;
+        transition: all ease 0.5s;
+    }
+
+    .div-redes i:hover{
+        font-size: 2.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    
+    .div-infoextra{
+        margin-left: 1rem;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    
+    .div-redes{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+/* #------------------------------------- EXTRA INFORMATION -------------------------------------# */
+
+/*---------------------------FIN estilo TRENDS------------*/
+
+/*---------------------------Inicio estilo foooter------------*/
+footer{
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 15vh;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li{
+    list-style: none;
+    /* display: inline-block; */
+    margin-right: 2rem;
+   
+}
+
+footer ul li a {  
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+footer ul li a.linkManage{
+    background-color: #181419;
+    padding: 0.5rem 0.1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer a.upArrow{
+    display: none;
+}
+
+
+/*media flecha*/
+@media only screen and (min-width: 790px){
+    footer a.upArrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        background: #1814197e;
+        padding: 0.5rem 1rem;
+        border-radius: 60px;
+        width: 100%;
+        transition: all 0.5s ease;
+        
+    }
+    
+    footer a.upArrow:hover{
+        box-shadow: rgba(159, 54, 72, 0.804) 0px 0px 30px;
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    footer {
+        min-height: 30vh;
+    }
+
+    footer ul{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+
+    footer ul li a{
+        font-size: 1rem;
+    }
+
+    footer{
+        height: 23vh;
+    }
+
+    footer .container{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*---------------------------FIN estilo foooter------------*/

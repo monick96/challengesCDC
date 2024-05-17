@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Solid:wght@100;300;400;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tauri&family=Truculenta:opsz,wght@12..72,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #181419;
+    color: white;
+}
+
+/* main{
+    background-color: #181419;
+    color: white;
+} */
+
+/* #------------------------------------- HEADER + NAV -------------------------------------# */
+
+header {
+    background-color: #9f3647;
+    /* cambio de 15 a 12vh */
+    min-height: 12vh;
+    top: 0;
+    position: sticky;
+    /* evita superposicion del aos animation*/
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 0 2rem;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a i{
+    font-size: 1.2rem;
+}
+
+.a-icon-header {
+    text-decoration: none;
+    color: white;
+    margin-top: 0.8rem;
+}
+
+nav a:visited {
+    color: white
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+nav li {
+    padding: 0.5rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.a-link-header{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: 650;
+    font-size: 1.2rem;
+    transition: all 300ms ease;
+    
+}
+
+.a-link-header:hover{
+    box-shadow: 0px 0px 5px -1px black;
+}
+
+#iniciar-sesion{
+    padding: 0.5rem;
+    border-radius: 8px ;
+    background-color: black;
+}
+
+#iniciar-sesion:hover{
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 760px) {
+    
+    header{
+        /* max-height: 15vh; */
+        /*Aumento a 20vh*/
+        max-height: 18vh;
+    }
+
+    nav {
+        padding: 0.5rem 0 0.5rem 0 ;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .a-icon-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul{
+        width: 80%;
+        display: inline-flex;
+        justify-content: space-evenly;
+        margin-top: 0.7rem;
+        padding: 0;
+    }
+    
+    nav li {
+        padding: 0.5rem;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .a-link-header{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 460px){
+    nav a i{
+        font-size: 1rem;
+    }
+
+    nav ul{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .a-link-header{
+        font-size: 0.9rem;
+    }
+
+}
+/* #------------------------------------- HEADER + NAV -------------------------------------# */
+
+/* #------------------------------------- BANNER INICIO -------------------------------------# */
+
+.section-banner-intro {
+    background: linear-gradient(rgba(5, 7, 12, 0.60), rgba(21, 26, 26, 0.6)), url("../images/index/banner.jpg"), no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    animation: slideInDown;
+    animation-duration: 1.5s;
+}
+
+.texto-banner-intro{
+    color: white;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.texto-banner-intro h1 {
+    width: 80%;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.texto-banner-intro h2 {
+    margin-top: 0.5rem;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.texto-banner-intro a,  .texto-banner-intro a:visited{
+    -webkit-text-stroke-width: none;
+    -webkit-text-stroke-color: none;
+    background-color: #9f3647;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 200;
+    border-radius: 8px;
+    transition: all 500ms ease;
+}
+
+.texto-banner-intro a:hover{
+    font-weight: 300;
+    padding: 1.3rem;
+    font-size: 1.4rem;
+    box-shadow: 0px 0px 6px -2px white;
+}
+
+@media only screen and (max-width: 750px){
+    .section-banner-intro {
+        max-height: 55vh;
+    }
+    
+    .texto-banner-intro{
+        padding: 2.6rem 0 3rem 0;
+    }
+    
+    .texto-banner-intro h1 {
+        font-size: 1.75rem;
+    }
+    
+    .texto-banner-intro h2 {
+        font-size: 1rem;
+    }
+    
+    .texto-banner-intro a,  .texto-banner-intro a:visited{
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+    
+    .texto-banner-intro a:hover{
+        padding: 1.1rem;
+        font-size: 1rem;
+    }
+}
+/* #------------------------------------- BANNER INICIO -------------------------------------# */
+
+/*--------------------------------------BUSCADOR y TENDENCIAS----------------------------------*/
+/*inicio buscador*/
+main .section.search, .searchForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+main section.search{
+    background-color: #181419;
+    color: rgb(255, 255, 255);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.search .searchTittle{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main section.search .inputSearch{
+    border: 2px solid white;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 20px 0px;
+    outline: none;
+    padding: 0px 20px;
+    width: 500px;
+}
+
+main section.search .buttonSearch{
+    background-color: #9f3647;
+    display: inline-block;
+    color: #ffffff;
+    height: 50px;
+    margin: 20px 10px;
+    padding: 0 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid white;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main section.search .buttonSearch:hover{
+    background-color: #9f3647;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/*media buscador*/
+@media only screen and (max-width: 768px){
+    main .section.search{
+        height: 30vh;
+    }
+
+    main section.search .searchTittle{
+        font-size: 1.6rem;
+        
+    }
+    main section.search .inputSearch{
+        font-size: 1rem;
+        height: 40px;
+        width: 300px;
+    }
+
+    main section.search .buttonSearch{
+        height: 40px;
+        padding: 0 0.9rem;
+        font-size: 1rem;
+    }
+
+}
+
+/*--------------------------fin buscador-----------------*/
+
+/*---------------------------inicio estilo linea hr------------*/
+hr{
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+/*-------------------Fin estilo linea hr------------------*/
+
+/*---------------------------inicio estilo TRENDS------------*/
+main section#trend{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main section#trend h3.trendTittle{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+main section#trend .trendMovies{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+main section#trend .trendMovies a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main section#trend .trendMovies .movie{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+/*hoover 1*/
+main section#trend .trendMovies .movie:hover{
+    box-shadow: rgba(159, 54, 72, 0.804) 0px 0px 30px;
+    transform: scale(0.9);
+}
+
+main section#trend .trendMovies .movie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main section#trend .trendMovies .movie .movieTittle{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    max-width: 20rem;
+    width: 100%;
+    transform: translateY(-50%) translateX(-50%);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(20px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    height: 100%;
+
+}
+
+/*hoover2*/
+main section#trend .trendMovies .movie:hover .movieTittle{
+    display: flex;
+    opacity: 1;
+}
+
+main section#trend .trendMovies .movie .movieTittle h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+
+}
+
+
+/*buttons*/
+main section#trend button.button{
+    border: 1px solid white;
+    box-sizing: content-box;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #9f3647;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 60px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+main section#trend button.button:hover{
+    background-color: #9f3647;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+/*media tendencias*/
+@media only screen and (max-width: 768px){
+    main section#trend{
+        width: 95%;
+    }
+
+    main section#trend h3.trendTittle{
+        font-size: 2rem;
+    }
+
+    /*creeria que no le hace falta esto*/
+    main section#trend #trendContainer .trendMovies{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main section#trend .trendMovies .movie{
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+
+/*---------------------------FIN estilo TRENDS------------*/
+
+/*---------------------------Inicio estilo foooter------------*/
+/* Estilos para el footer */
+footer{
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 15vh;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    list-style: none;
+}
+
+footer ul li{
+    /* list-style: none;
+    display: inline-block; 
+    margin-right: 2rem; */
+    margin-left: 20px;
+   
+} 
+
+footer ul li a {  
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    /* font-size: 1.1rem; */
+    font-size: 1.2rem;
+}
+
+footer ul li:not(:last-child) a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+footer ul li a.linkManage{
+    background-color: #181419;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer ul li a.linkManage:hover{
+    box-shadow: rgba(252, 252, 252, 0.247) 0px 0px 30px;
+    transform: scale(0.95);
+}
+
+footer a.upArrow{
+    display: none;
+}  
+
+
+/*media flecha*/
+@media only screen and (min-width: 769px){
+    footer a.upArrow{
+        display: flex; 
+        color: white;
+        background: #1814197e;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 60px;
+        width: 100%;
+        transition: all 0.5s ease;
+        cursor: pointer; 
+        
+    }
+    
+    footer a.upArrow:hover{
+        box-shadow: rgba(159, 54, 72, 0.804) 0px 0px 30px;
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    footer ul{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+
+    footer ul li a{
+        font-size: 1rem;
+    }
+
+    footer .container{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .col-md-11{
+        width: 100% !important;
+    }
+    footer{
+        min-height: 30vh;
+    }
+} 
+
+
+/*---------------------------FIN estilo foooter------------*/
+
+/*---------------------------inicio estilo ACLAMADAS------------*/
+
+#aclamadasContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+#aclamadasContainer::-webkit-scrollbar {
+    width: 10px;
+}
+
+#aclamadasContainer::-webkit-scrollbar-track {
+    background-color:#181419; 
+}
+
+#aclamadasContainer::-webkit-scrollbar-thumb {
+    background-color:#9f3647; 
+
+      }
+
+.peliculaItem {
+        border-radius: 25px;
+        width: 170px;
+        min-width: 170px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+
+.imgAclamada {
+    border-radius: 5%;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+  }
+
+  .imgAclamada:hover {
+    box-shadow: rgba(159, 54, 72, 0.804) 0px 0px 30px;
+    transform: scale(0.9);
+}
+ 
+  
+/*---------------------------FIN estilo ACLAMADAS------------*/

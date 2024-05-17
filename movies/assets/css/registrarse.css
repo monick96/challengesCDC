@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+
+body.bodyRegistrarse {
+  
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background:linear-gradient(to right top, #24242473,#24242473),url(https://img.freepik.com/vector-premium/patron-vector-cine-pelicula-doodle-dibujado-mano-boceto-estilo-pelicula-patrones-fisuras-elementos-cine-produccion-medios-festival-teatro-fondo-vector_253081-1506.jpg);
+  
+}
+
+.headerRegistrarse {
+  
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.anclaLogo {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.seccionRegistrarse {
+  background-color: #333;
+  border: 1px solid #9f3647;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.tituloRegistrarse {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  background-position: calc(100% - 10px) center;
+  /* Position arrow at the right */
+  cursor: pointer;
+  /* Indicate clickability */
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.check {
+  width: 12px; 
+  height: 12px; 
+  appearance: none; 
+  background-color: #fff; 
+  border: 1px solid hsl(0, 0%, 100%); 
+  cursor: pointer; 
+  margin-top: 20px;
+  }
+
+.textoCheck {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.centrar {
+  display: flex;           
+  justify-content: center; 
+}
+
+
+.boton {
+  background-color: #9f3647;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+
+.boton:hover {
+  box-shadow: rgba(159, 54, 72, 0.804) 0px 0px 30px;
+  transform: scale(0.9);
+  background-color: #7d4e53;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 87%;
+  border-radius: 5px;
+
+
+}
+
+.terminos{
+  
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.ayuda {
+  color: #787878;
+  font-size: 1rem;
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+form {
+  width: 100%;
+  padding: 40px;
+
+  input:not(.check, .boton),
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    outline: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .error input:not(.check, .boton),
+  .error select {
+    border: 1px solid #ff0000;
+  }
+
+  .error-text {
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
